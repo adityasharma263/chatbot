@@ -1,0 +1,8 @@
+###### Django ######
+Django==1.8.2
+djangorestframework==3.1.2
+django-model-utils==2.5
+django-extensions==1.6.3
+
+#### AI #####
+python-aiml==0.9.0

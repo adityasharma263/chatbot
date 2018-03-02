@@ -1,0 +1,23 @@
+# text editor/IDE files #
+######################
+__pycache__/
+*.pyc
+.idea/
+.idea
+__pycache__/*.pyc
+
+# OS generated files #
+#####################
+**/.DS_Store
+bot_brain.brn
+Thumbs.db
+desktop.ini
+
+# Virtual environment folder #
+######################
+venv/
+venv2/
+py3env/
+
+development.cfg
+production.cfg
