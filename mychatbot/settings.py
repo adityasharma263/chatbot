@@ -50,10 +50,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django.contrib.postgres',
     'django_extensions',
-    'social_media',
-    'social_media.app',
+    'mychatbot',
+    'mychatbot.app',
 ]
 
 
@@ -69,7 +68,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 
-ROOT_URLCONF = 'social_media.urls'
+ROOT_URLCONF = 'mychatbot.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -86,27 +85,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'social_media.wsgi.application'
+WSGI_APPLICATION = 'mychatbot.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-LDB_NAME = config.get('database', 'NAME')
-LDB_USER = config.get('database', 'USER')
-LDB_PASSWORD = config.get('database', 'PASSWORD')
-LDB_HOST = config.get('database', 'HOST')
-
-DATABASES = {
-    'default': {
-        'CONN_MAX_AGE': 500,
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': LDB_NAME,
-        'USER': LDB_USER,
-        'PASSWORD': LDB_PASSWORD,
-        'HOST': LDB_HOST,
-        'PORT': '5432',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

@@ -1,5 +1,0 @@
-[database]
-NAME: project
-USER: postgre
-PASSWORD: root
-HOST: 127.0.0.1
